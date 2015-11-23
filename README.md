@@ -2,7 +2,7 @@
 ## Android 圆角菱形图片
 
 **效果图**
-    ![]()
+    ![IMG](https://github.com/HayDar-Android/RoundRhombusImageView/blob/master/img.png)
 ### 使用方法：
 **布局文件里**
 ``` xml
