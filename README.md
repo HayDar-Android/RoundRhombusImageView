@@ -5,27 +5,29 @@
     ![]()
 ### 使用方法：
 **布局文件里**
-    ‘  <com.haydar.rrv.RoundRhombusImageView
+``` xml
+     <com.haydar.rrv.RoundRhombusImageView
          android:id="@+id/img"
          android:layout_width="100dp"
          android:layout_height="100dp"
          android:layout_centerInParent="true"
-         android:visibility="visible" />’
-
+         android:visibility="visible" />
+```
 **java代码里**
-‘
-public class MainActivity extends AppCompatActivity {
-    RoundRhombusImageView roundRhombusImageView;
+``` java
+ RoundRhombusImageView roundRhombusImageView;
+```
 
-    @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
-        roundRhombusImageView = (RoundRhombusImageView) findViewById(R.id.img);
-        roundRhombusImageView.setRound(50);
-        roundRhombusImageView.setImageBitmap(roundRhombusImageView.processImage(BitmapFactory.decodeResource(getResources(), R.drawable.img)));
-    }
+
+
+
+``` java
+@Override
+protected void onCreate(Bundle savedInstanceState) {
+    super.onCreate(savedInstanceState);
+    setContentView(R.layout.activity_main);
+    roundRhombusImageView = (RoundRhombusImageView) findViewById(R.id.img);
+    roundRhombusImageView.setRound(50);
+    roundRhombusImageView.setImageBitmap(roundRhombusImageView.processImage(BitmapFactory.decodeResource(getResources(), R.drawable.img)));
 }
-’
-
-
+```
