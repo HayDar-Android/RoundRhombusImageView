@@ -28,6 +28,6 @@ protected void onCreate(Bundle savedInstanceState) {
     setContentView(R.layout.activity_main);
     roundRhombusImageView = (RoundRhombusImageView) findViewById(R.id.img);
     roundRhombusImageView.setRound(50);
-    roundRhombusImageView.setImageBitmap(roundRhombusImageView.processImage(BitmapFactory.decodeResource(getResources(), R.drawable.img)));
+    roundRhombusImageViewb.setImageBitmap(roundRhombusImageViewb.processImage(roundRhombusImageViewb.scanBitmap(BitmapFactory.decodeResource(getResources(), R.drawable.img))));
 }
 ```
